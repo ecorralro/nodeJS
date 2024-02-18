@@ -4,12 +4,12 @@ servidor.createServer(function(req,res){
     res.writeHead(200,{'Content-Type':'text/html'});
     res.write("<h1>Hola mundo desde Node.js</h1>");
     res.write(`
-              <ul>
-                    <li><a href="/">Inicio</a></li>
-<li><a href="/sobremi">Sobre Mi</a></li>
-<li><a href="/contacto">Contacto</a></li>
-                </ul>
-              `);
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/sobremi">Sobre Mi</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+            `);
     switch(req.url){
         case "/":
             res.end("Estás en la página principal");
